@@ -1,5 +1,4 @@
 import 'package:flutter/gestures.dart';
-import 'package:flutter/material.dart';
 import 'package:s_expendable_menu/s_expendable_menu.dart';
 
 void main() {

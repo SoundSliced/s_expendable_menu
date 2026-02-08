@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:s_button/s_button.dart';
 import 'package:s_expendable_menu/s_expendable_menu.dart';
 
 void main() {

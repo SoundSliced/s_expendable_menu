@@ -23,7 +23,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  s_expendable_menu: ^2.0.0
+  s_expendable_menu: ^2.1.0
 ```
 
 Then run:
@@ -243,6 +243,7 @@ class _MyWidgetState extends State<MyWidget> {
 | `animationDuration`  | `Duration`              | `Duration(milliseconds: 400)` | Duration of expand/collapse animation                                     |
 | `animationCurve`     | `Curve`                 | `Curves.easeOutCubic`         | Animation curve                                                           |
 | `expandDirection`    | `ExpandDirection`       | `ExpandDirection.auto`        | Direction of menu expansion                                               |
+| `onExpansionChanged` | `void Function(bool)?`  | `null`                        | Callback when expansion state changes                                     |
 
 ### SExpandableItem
 
@@ -251,6 +252,8 @@ class _MyWidgetState extends State<MyWidget> {
 | `icon`    | `IconData`               | **required** | Icon to display                                                 |
 | `size`    | `double?`                | `null`       | Optional size override (defaults to 90% of item container size) |
 | `onTap`   | `void Function(Offset)?` | `null`       | Callback when item is tapped, receives tap position             |
+| `tooltip` | `String?`                | `null`       | Tooltip text shown on hover or long-press                       |
+| `disabled`| `bool`                   | `false`      | Render at reduced opacity with null tap handler                 |
 
 ### SExpandableHandles
 
